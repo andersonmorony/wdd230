@@ -1,0 +1,21 @@
+@media screen and (max-width: 480px) {
+    
+    header {
+        flex-wrap: wrap;
+    }
+    main {
+        row-gap: 10px;
+    }
+    nav {
+        padding: 20px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        gap: 4px
+    }
+
+    .card {
+        grid-column: 1 / 3 !important;
+        grid-row: auto !important;
+    }
+  }
