@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Libre Franklin", sans-serif;
+}
+
+:root {
+    --primary: #5da78e;
+    --secondary: #6fb09a;
+    --thrid: #9cc2b5;
+    --fourty: #d9e2e1;
+    --white: #f2f2f2;
+    --black: #000000d9;
+    --success: #bfdc80;
+    --success-strong: #97b838;
+
+}
+
+body {
+    display: grid;
+    grid-template: 1fr / 10% 1fr 10%;
+}
+
+main {
+    grid-column-start:  2;
+}
+
+main h2 {
+    padding: 16px 8px;
+    background-color: var(--primary);
+    color: var(--white)
+}
