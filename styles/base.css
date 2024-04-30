@@ -42,7 +42,7 @@ nav ul{
 }
 
 nav ul li {
-    background-color: rgb(65, 158, 235);
+    background-color: #003e70;
     list-style-type: none;
     padding: 20px;
     width: 100%;
@@ -50,7 +50,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color:rgb(38, 94, 139);
+    background-color: #003661;
 }
 
 nav ul li a {
