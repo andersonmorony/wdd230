@@ -98,14 +98,6 @@ nav ul li a {
 	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
-.stuff {
-	margin: .5m;
-	border: 1px solid rgba(0,0,0,.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
-	
-}
 
 main {
     display: grid;
