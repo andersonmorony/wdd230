@@ -41,7 +41,7 @@
 		flex-direction: row;
 	}
 
-	.navigation a {
+	.navigation li  {
 		display: block;
 		flex: 1 1 100%;
 	}

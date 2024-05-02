@@ -70,7 +70,12 @@ nav ul{
     padding: 0;
 }
 
-nav ul a {
+
+nav ul li a:hover {
+    background-color: #003661;
+}
+
+nav ul li {
     display: none;
     background-color: #003e70;
     list-style-type: none;
@@ -79,17 +84,13 @@ nav ul a {
     text-align: center;
 }
 
-nav ul a:hover {
-    background-color: #003661;
-}
-
-nav ul a {
+nav ul li a {
     color: aliceblue;
     text-decoration: none;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
+.open li {
 	display: block;
 }
 
