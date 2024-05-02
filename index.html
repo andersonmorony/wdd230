@@ -12,22 +12,27 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://andersonmorony.github.io/wdd230/" />
     <meta property="og:image" content="https://andersonmorony.github.io/wdd230/images/me.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <div id="mode">
+        🕶️
+    </div>
     <header>
         <img src="images/me.jpg" alt="Me">
         <span>Anderson Moroni</span>
     </header>
-    <nav>
+    <button id="menu"></button>
+    <nav class="navigation">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
+            <a href="#" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="week01/chamber-site-plan.html">Site Plan</a>
+            <a href="#">Form</a>
         </ul>
     </nav>
     <main>
@@ -56,4 +61,6 @@
     </footer>
 </body>
 <script src="scripts/getDates.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/darkMode.js"></script>
 </html>
