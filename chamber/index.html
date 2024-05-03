@@ -26,11 +26,12 @@
         </div>
         <div id="menu">
             <img src="images/mock.png" alt="logo">
-            <nav>
+            <button id="btn-menu"></button>
+            <nav class="navigation">
                 <ul>
-                    <li>Example 1</li>
-                    <li>Example 2</li>
-                    <li>Example 3</li>
+                    <li><a href="#">Example 1</a></li>
+                    <li><a href="#">Example 2</a></li>
+                    <li><a href="#">Example 3</a></li>
                 </ul>
             </nav>
             <button>Join</button>
@@ -121,10 +122,12 @@
         </section>
     </main>
     <footer>
-        <p>2024</p>
+        <p id="year">2024</p>
         <p>Anderson Moroni Ramos - WDD 230 - Web Frontend Development</p>
-        <p>Last modification </p>
+        <p id="lastmod">Last modification: </p>
         <p>Brazil | Parana</p>
     </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

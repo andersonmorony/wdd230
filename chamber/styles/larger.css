@@ -1,0 +1,17 @@
+  /* large view navigation ************************************/
+  @media (min-width: 37.5em) {
+
+	#btn-menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+    
+	.navigation li  {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+}
