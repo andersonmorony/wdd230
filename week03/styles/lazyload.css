@@ -2,7 +2,6 @@
 
 * {
     font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
 }
 
 body {
@@ -13,11 +12,21 @@ main {
     margin: 0 auto;
     width: 400px;
 }
-
+header h1{
+    background: #00c37d;
+    padding: 16px
+}
+main p {
+    font-weight: 300;
+}
 main img {
     display: block;
     width: 100%;
     animation: fade 15s;
+}
+
+footer {
+    text-align: center;
 }
 
 @keyframes fade{
