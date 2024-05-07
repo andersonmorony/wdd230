@@ -23,7 +23,7 @@
         🕶️
     </div>
     <header>
-        <img src="images/me.jpg" alt="Me">
+        <img src="images/me.webp" alt="Me">
         <span>Anderson Moroni</span>
     </header>
     <button id="menu"></button>
@@ -36,6 +36,16 @@
         </ul>
     </nav>
     <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/small.webp">
+                <source media="(max-width: 1000px)" srcset="images/medium.webp">
+                <img src="images/large.webp" alt="Temple of Recife" width="1500px" height="750px">
+            </picture>
+                <div class="herolabel">
+                    <p>Recife Temple</p>
+                </div>
+        </section>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
@@ -58,6 +68,9 @@
                 <li>
                     <a href="#">Information</a>
                 </li>
+                <li>
+                    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+                </li>
             </ul>
         </section>
     </main>
@@ -69,5 +82,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visitorCount.js"></script>
 </body>
 </html>
