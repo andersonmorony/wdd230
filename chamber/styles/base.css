@@ -277,10 +277,5 @@ main#discover .right-side img, main#discover .left-side picture img {
     width: 100%;
     height: auto;
 }
-main#discover .right-side img {
-    max-width: 400px;
-    min-height: 120px;
-    max-height: 175px;
-    object-fit: cover;
-}
+
 

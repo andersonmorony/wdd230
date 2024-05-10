@@ -40,10 +40,14 @@
 		padding: 0 10%;
 		grid-template-columns: 1fr 1fr;
 	}
-	main#discover .left-side{
-	}
+	
 	.card.visitor{
-		height: 100px;
+		max-height: 120px;
+	}
+	main#discover .right-side img {
+		min-height: 120px;
+		max-height: 206px;
+		object-fit: cover;
 	}
 	
 }
