@@ -3,6 +3,8 @@
 :root{
     --primary: rgb(238,174,202);
     --secondary: rgba(148,187,233,1);
+    --text: rgb(18, 83, 156);
+
 }
 
 * {
@@ -25,6 +27,10 @@ main {
 .wf1 {
     position: relative;
     padding: 1rem 2rem;
+}
+
+.wf1 h1 {
+    color: var(--text);
 }
 
 .wf1 input[type="text"],
