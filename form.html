@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form action="record.html" method="get" class="wf1">
+            <label>Username* <input type="text" name="username" id="username" required></label>
+            <label>Password* <input type="password" name="password" id="password" required
+                    pattern="[A-Za-z0-9]{8}"></label>
+            <label>Password Confirmation* <input type="password" name="passwordconfirmation" id="passwordconfirmation"
+                    required pattern="[A-Za-z0-9]{8}"></label>
+            <label>Email* <input type="email" name="email" id="email" required
+                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"></label>
+            <label>Page Rating <input type="range" name="range" id="range" max="10" min="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </label>
+            <input type="submit" value="Create Your Account">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
