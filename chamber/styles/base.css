@@ -285,3 +285,109 @@ main#discover .right-side img, main#discover .left-side picture img {
 }
 
 
+/* JOIN */
+
+#join{
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+#join section.title{
+    grid-column: 1/3;
+}
+
+.form fieldset{
+    padding: 1rem .75rem;
+    border: solid 1px #b7b7b7;
+    margin-bottom: 1rem;
+}
+
+.form fieldset legend{
+    color: #08620e;
+    padding: 2%;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form select,
+.form textarea{
+    display: flex;
+    width: inherit;
+    margin-bottom: .75rem;
+    padding: .75rem 10px;
+    border: solid 1px #9d9d9d ;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #666;
+    appearance: none;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
+    padding: .75rem 5px;
+    width: 98%;
+}
+
+.form input:required {
+    border-left: solid 2px rgb(248, 93, 93);
+}
+.form input:required:valid {
+    border-left: solid 2px rgb(36, 162, 65);
+}
+
+.form label {
+    width: 100%;
+}
+
+.form input[type="submit"] {
+    border: none;
+    padding: 1rem .75rem;
+    width: 100%;
+    font-size: 1.1rem;
+    background-color: var(--primary);
+    color: #000;
+    border-radius: 6px;
+}
+.form input[type="submit"]:hover{
+    background-color: var(--secondary);
+    transition: .3s;
+}
+#join .card {
+    display: none;
+}
+
+#join .card img{
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+}
+
+/* THANK YOU PAGE */
+
+#thankyou{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    height: 70vh;
+}
+
+#thankyou section {
+    width: 80%;
+    margin: 5% auto;
+}
+#thankyou section p {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+
+#thankyou section a{
+    font-size: 1.1rem;
+    text-decoration: none;
+}

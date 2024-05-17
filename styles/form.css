@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:wght@200&family=Roboto:wght@300&display=swap');
 
+:root{
+    --primary: rgb(238,174,202);
+    --secondary: rgba(148,187,233,1);
+}
+
 * {
     font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: --primary;
+    background: radial-gradient(circle, var(--primary) 0%, var(--secondary) 100%);
 }
 
 main {
@@ -54,13 +59,13 @@ main {
     padding: .75rem;
     margin-top: 2rem;
     font-size: 1rem;
-    background-color: rgba(148,187,233,1);
+    background-color: var(--secondary);
 }
 
 
 #rangevalue {
 	font-size: 2rem;
-	color: rgba(238,174,202,1);
+	color: var(--primary);
 }
 
 #rangevalues {

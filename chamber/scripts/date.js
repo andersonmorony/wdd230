@@ -2,10 +2,21 @@ let oLastModif = new Date(document.lastModified).getFullYear();
 const footer = document.getElementById("year");
 const lastElement = document.getElementById("lastmod");
 const currentDateSpan = document.getElementById("current_date");
+const inputTimestamp = document.getElementById("timestamp");
 
 footer.innerText = `©${oLastModif}`
 lastElement.innerText = `Last modified: ${document.lastModified}`
-currentDateSpan.innerHTML = getDate();
+
+
+if(currentDateSpan != null && currentDateSpan != undefined)
+{
+    currentDateSpan.innerHTML = getDate();
+}
+
+if(inputTimestamp != null && inputTimestamp != undefined)
+{
+    inputTimestamp.value = getDate();
+}
 
 
 function getDate()
