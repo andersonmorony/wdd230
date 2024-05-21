@@ -4,12 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Anderson Moroni - WDD 230 - Web Frontend Development - form</title>
+    <meta name="author" content="Anderson Moroni Ramos">
+    <meta name="description" content="WDD 230 - Web Frontend Development, Anderson Moroni Ramos">
+    <!-- The Essential Meta Tags for Social Media -->
+    <meta property="og:title" content="Anderson Moroni - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://andersonmorony.github.io/wdd230/">
+    <meta property="og:image" content="https://andersonmorony.github.io/wdd230/images/me.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header></header>
+    <div id="mode">
+        🕶️
+    </div>
+    <header>
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/me-small.webp">
+            <source media="(max-width: 500px)" srcset="images/me-medium.webp">
+            <img src="images/me.webp" alt="Me">
+        </picture>
+        <span>Anderson Moroni</span>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
     <main>
         <form action="record.html" method="get" class="wf1">
             <h1>Create you account</h1>
@@ -38,7 +68,15 @@
             <input type="submit" value="Create Your Account">
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <p>©year</p>
+        <p>Anderson Moroni Ramos</p>
+        <p>Brazil | Parana</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visitorCount.js"></script>
 </body>
 
 </html>

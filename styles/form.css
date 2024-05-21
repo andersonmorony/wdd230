@@ -11,12 +11,8 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body {
-    background: --primary;
-    background: radial-gradient(circle, var(--primary) 0%, var(--secondary) 100%);
-}
-
 main {
+    display: block;
     background-color: #fff;
     width: 100%;
     max-width: 420px;
