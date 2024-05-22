@@ -1,0 +1,52 @@
+{
+    "members": [
+        {
+            "name": "Cresci e Perdi",
+            "addresses": "Rua Dona Izabel A Redentora, 2762 - Centro, São José dos Pinhais - PR, 83005-010",
+            "phone": "(11) 94353-8000",
+            "websiteUrl": "https://crescieperdi.com/home/",
+            "image": "https://crescieperdi.com/wp-content/uploads/2023/10/logo_header.png",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Patio Physical Training Center",
+            "addresses": "Av. Rui Barbosa, 9327 - Centro, São José dos Pinhais - PR, 83005-340",
+            "phone": "(41) 3398-5656",
+            "websiteUrl": "https://www.instagram.com/patioprimeacademia/",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9VDSVZtYJsiFWMcpdM8P70BeVTelOsiXmPK7BCvGMhw&s",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Supermarket Jacomar",
+            "addresses": "R. Pedro Trevisan, 58 - Santo Antônio, São José dos Pinhais - PR, 83025-580",
+            "phone": "(41) 3211-3870",
+            "websiteUrl": "https://www.jacomar.com.br/",
+            "image": "https://www.jacomar.com.br/img/loja-padrao-logo-1593703309.jpg",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Hisgschool Option",
+            "addresses": "R. Dr. Motta Júnior, 2700 - Aristocrata, São José dos Pinhais - PR, 83025-030",
+            "phone": "(41) 99924-4615",
+            "websiteUrl": "https://colegioopcaosjp.com.br/",
+            "image": "https://colegioopcaosjp.com.br/img/logo-opcao.png",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "King of feet",
+            "addresses": "R. Quinze de Novembro, 1370 - Centro, São José dos Pinhais",
+            "phone": "(41) 3398-1832",
+            "websiteUrl": "https://www.reidope.com.br/",
+            "image": "https://www.reidope.com.br/lojas/00043837/images/logotopo.png",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Churrascaria Recanto Gaúcho",
+            "addresses": "Av. Com. Franco, 4680 - Guabirotuba, Curitiba - PR, 81530-440",
+            "phone": "(41) 3276-2615",
+            "websiteUrl": "https://churrascariarecantogaucho.com.br/",
+            "image": "https://churrascariarecantogaucho.com.br/imagens/logo.png",
+            "membership_level": "Gold"
+        }
+    ]
+}
