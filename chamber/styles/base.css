@@ -410,8 +410,8 @@ main#discover .right-side img, main#discover .left-side picture img {
 
 main {
     grid-template-rows: auto auto 1fr;
-    grid-template-columns: 390px;
-    padding: 0 .5rem;
+    grid-template-columns: 375px;
+    padding: 0 1rem;
     gap: 0;
 }
 
