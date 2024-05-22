@@ -15,22 +15,20 @@ async function getFetch() {
     }
 }
 
+
+
 const HandleData = (data) => {
-    const memberEl = document.querySelector('.members')
-    
-    data.members.forEach(element => {
+    const memberEl = document.querySelector('.spotlights')
+    const filterData = data.members.slice(0, 4)
+
+    filterData.forEach(element => {
         const html = 
             `<div class="card">
                 <picture>
-                    <img src="${element.image}" loading="lazy" alt="${element.name}">
+                    <img src="${element.image}"  alt="${element.name}" loading="lazy">
                 </picture>
-                <span class="title">
-                    <img src="images/${element.membership_level}.png" loading="lazy" alt="${element.membership_level}">
-                    ${element.name}
-                </span>
-                <span class="description">${element.addresses}</span>
-                <span>${element.phone}</span>
-                <a href="${element.websiteUrl}" target="_blank">Details</a>
+                <h3>${element.name}</h3>
+                <a href="${element.websiteUrl}">Details</a>
             </div>`
             memberEl.innerHTML += html;
     });
