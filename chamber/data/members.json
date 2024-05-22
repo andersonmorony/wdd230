@@ -47,6 +47,14 @@
             "websiteUrl": "https://churrascariarecantogaucho.com.br/",
             "image": "https://churrascariarecantogaucho.com.br/imagens/logo.png",
             "membership_level": "Gold"
+        },
+        {
+            "name": "Atacadão - São José dos Pinhais",
+            "addresses": "Av. Rui Barbosa, 7992 - Boneca do Iguaçu, São José dos Pinhais - PR, 83040-550",
+            "phone": "(41) 3753-2624",
+            "websiteUrl": "https://andersonmorony.github.io/wdd230/chamber/images/atacadao-logo.png",
+            "image": "https://www.atacadao.com.br/",
+            "membership_level": "Gold"
         }
     ]
 }
