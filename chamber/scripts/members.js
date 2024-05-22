@@ -21,10 +21,10 @@ const HandleData = (data) => {
         const html = 
             `<div class="card">
                 <picture>
-                    <img src="${element.image}" alt="${element.name}">
+                    <img src="${element.image}" loading="lazy" alt="${element.name}">
                 </picture>
                 <span class="title">
-                    <img src="images/${element.membership_level}.png" alt="${element.membership_level}">
+                    <img src="images/${element.membership_level}.png" loading="lazy" alt="${element.membership_level}">
                     ${element.name}
                 </span>
                 <span class="description">${element.addresses}</span>
