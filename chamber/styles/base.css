@@ -407,11 +407,11 @@ main#discover .right-side img, main#discover .left-side picture img {
     text-decoration: none;
 }
 
-/* Directory */
+
 main {
     grid-template-rows: auto auto 1fr;
-    grid-template-columns: auto;
-    padding: 0 4rem;
+    grid-template-columns: 390px;
+    padding: 0 .5rem;
     gap: 0;
 }
 
@@ -465,7 +465,7 @@ main#directory p {
 }
 
 .list .card {
-    padding: 1rem;
+    padding: 1rem 0px;
     border: solid #eee 1px;
     display: flex;
     align-items: center;
@@ -490,7 +490,8 @@ main#directory p {
     width: 18px;
     padding: 0 10px;
 }
-.card .description {
+.list .card .description {
+    display: none;
     color: #666;
     font-size: .9rem;
 }
