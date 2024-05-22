@@ -512,3 +512,6 @@ section.btn-group button{
 section.btn-group button.actived {
     background-color: var(--thrid);
 }
+section.btn-group button.actived::before {
+    content: "📍";
+}
