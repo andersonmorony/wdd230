@@ -67,11 +67,17 @@ header #menu {
     grid-template-columns: auto 1fr 100px;
     padding: 10px;
     border-top: 1px solid;
-    align-items: start;
+    align-items: center;
+
     row-gap: 8px;
 }
 header #menu img {
     width: 70px;
+}
+header #menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
 }
 #menu nav {
     grid-row: 2;
@@ -399,4 +405,110 @@ main#discover .right-side img, main#discover .left-side picture img {
 #thankyou section a{
     font-size: 1.1rem;
     text-decoration: none;
+}
+
+/* Directory */
+main {
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: auto;
+    padding: 0 4rem;
+    gap: 0;
+}
+
+main#directory h1 {
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+}
+main#directory p {
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 16px;
+}
+.grid .card {
+    padding: 1rem;
+    border: solid #eee 1px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40px 50px 40px 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.grid .card picture img {
+    width: 100%;
+    max-width: 230px;
+}
+.grid .card .title {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.grid .card .title img {
+    width: 28px;
+}
+.grid .card .description {
+    color: #666;
+    font-size: .9rem;
+}
+
+/*  LIST */
+
+.list {
+    display: block;
+    min-height: 500px;
+}
+
+.list .card {
+    padding: 1rem;
+    border: solid #eee 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.list .card picture img {
+    display: none;
+}
+.list .card .title {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.list .card a {
+    padding: 0 40px;
+}
+
+.list .card .title img {
+    width: 18px;
+    padding: 0 10px;
+}
+.card .description {
+    color: #666;
+    font-size: .9rem;
+}
+
+
+section.btn-group {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 8px;
+}
+section.btn-group button{
+    border: none;
+    padding: .75rem 1rem;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 500;
+}
+section.btn-group button.actived {
+    background-color: var(--thrid);
 }
