@@ -436,7 +436,7 @@ main#directory p {
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 40px 50px 40px 20px;
+    grid-template-rows: 230px 40px 40px 40px 20px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 .grid .card picture img {
