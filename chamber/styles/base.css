@@ -213,6 +213,7 @@ main #events .title {
 }
 main .events-title{
     grid-column: 1/4;
+    font-size: 1.2rem;
 }
 main #events .events-content {
     padding: 20px;
@@ -299,9 +300,15 @@ main#discover{
     grid-template-rows: auto;
     padding: 10px;
 }
+main#discover h1 {
+    color: #08620e;
+}
 
 main#discover .title{
     grid-column: 1/3;
+}
+main#discover .title p {
+    font-size: 1.2rem;
 }
 
 main#discover .left-side {
@@ -324,8 +331,13 @@ main#discover .left-side .card p {
 main#discover .right-side img, main#discover .left-side picture img {
     width: 100%;
     height: auto;
+    min-height: 300px;
+    object-fit: cover;
 }
 
+#current_date {
+    margin-top: 16px;
+}
 
 /* JOIN */
 
