@@ -2,7 +2,7 @@ const key = "60628beb7fd1b408647718048fef070c"
 const lat = -25.531919217400873
 const lon = -49.195448169773805
 const type = "imperial"
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${type}&appid=${key}`
+const url = `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}`
 
 
 async function apiFetch() {
@@ -12,12 +12,29 @@ async function apiFetch() {
             const data = await response.json();
             console.log(data);
             displayResult(data)
+            mapWeatherObject(data)
         } else {
             throw Error(await response.text());
         }
     } catch (error) {
         console.log(error);
     }
+}
+
+const mapWeatherObject = (apiResponse) => {
+    const response = apiResponse.list.map((item) => {
+        return {
+            date: new Date(item.dt),
+            temp: {
+                temp: item.main.temp,
+                temp_min: item.temp_min,
+                temp_max: item.temp_max
+            },
+            weather: item.weather[0]
+                
+        }
+    })
+    console.log(response)
 }
 
 

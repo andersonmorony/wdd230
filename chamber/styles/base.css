@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary: #5da78e;
+    --primary: #295848;
     --secondary: #6fb09a;
     --thrid: #9cc2b5;
     --fourty: #d9e2e1;
@@ -14,6 +14,13 @@
   font-family: "Libre Franklin", sans-serif;
 }
 
+h1, h2, h3, h4{
+    color: var(--primary);
+}
+
+a {
+    text-decoration: none;
+}
 
 .btn-primary {
     width: 100px;
@@ -196,8 +203,60 @@ main #actions .actions button:hover{
 
 /* Weather */
 .weather {
+    display: grid;
+    grid-row: 1;
+    width: 100%;
+    max-width: 320px;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    background-color: var(--thrid);
+    padding: .75rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.weather .current-day {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.weather .current-day .left {
+    display: flex;
+}
+.weather .current-day .left div {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather .current-day .left,
+.weather .current-day .right {
+    text-align: center;
+}
+
+.weather .current-day h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #000;
+}
+.weather .current-day span {
+    font-size: .8rem;
+} 
+
+
+.weather .anothers-days {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+}
+.weather .anothers-days div {
+    text-align: center;
+}
+.weather .anothers-days h3, span {
+    margin: 0;
+    font-size: .9rem;
+    color: #000;
 }
 
 /* Events */
@@ -205,8 +264,14 @@ main #events {
     display: grid;
     grid-column: 1 / 4;
     grid-template-columns: auto;
-    padding: 0 10%;
+    padding: 0 5%;
     margin-top: 20px;
+}
+main #events .events-image {
+    margin-top: 20px;
+}
+main #events .events-image img {
+    max-width: 340px;
 }
 main #events .title {
     grid-column: 1/3;
@@ -218,6 +283,9 @@ main .events-title{
 main #events .events-content {
     padding: 20px;
     grid-column: 1/4;
+}
+main #events .events-content h1 {
+    margin-top: 0;
 }
 main #events .card {
     display: grid;

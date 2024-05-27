@@ -39,14 +39,24 @@
   		flex-direction: row;
   	}
 
+	
+
   	main #events .events-content {
   		padding: 20px;
   		grid-column: 2/4;
   	}
 
+	main .weather {
+		grid-column: 3 / 4;	
+	}
+
   	main #events {
-  		grid-template-columns: 500px 1fr 300px;
+  		grid-template-columns: auto 1fr 400px;
   	}
+	main #events .title {
+		display: flex;
+		align-items: flex-end;
+	}
 
   	#btn-menu {
   		display: none;
