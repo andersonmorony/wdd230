@@ -82,9 +82,10 @@ header #menu img {
     width: 70px;
 }
 header #menu a {
-    text-decoration: none;
     font-size: 1.2rem;
     color: #000;
+}header #menu a:hover {
+    color: var(--secondary);
 }
 #menu nav {
     grid-row: 2;
@@ -197,8 +198,8 @@ main #actions .actions button{
     cursor: pointer;
 }
 main #actions .actions button:hover{
-    background-color: var(--black);
-    color: var(--thrid);
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 /* Weather */
@@ -265,7 +266,6 @@ main #events {
     grid-column: 1 / 4;
     grid-template-columns: auto;
     padding: 0 5%;
-    margin-top: 20px;
 }
 main #events .events-image {
     margin-top: 20px;
@@ -283,14 +283,26 @@ main .events-title{
 main #events .events-content {
     padding: 20px;
     grid-column: 1/4;
+    margin-bottom: 10px;
 }
 main #events .events-content h1 {
     margin-top: 0;
+}
+main #events .events-content .date {
+    font-size: .9rem;
+    color: var(--black);
+}
+main #events .events-content .date::before {
+    content: "📅";
+}
+main #events .events-content .place::before {
+    content: "🚩";
 }
 main #events .card {
     display: grid;
     grid-template-columns: 70px 1fr;
     column-gap: 20px;
+    margin-bottom: 20px;
 }
 main #events .card img {
     width: 70px;
@@ -625,3 +637,49 @@ section.btn-group button.actived {
 section.btn-group button.actived::before {
     content: "📍";
 }
+
+
+/* Banner */
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006c;
+}
+
+.banner-content .header {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-top: 8px;
+}
+
+.banner .banner-content .main {
+    display: grid;
+    padding: 0 40px;
+}
+
+.banner_hidden {
+    display: none;
+}
+
+.banner-content {
+    display: block;
+    width: 340px;
+    max-height: 100%;
+    min-height: 400px;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: .5rem;
+    border-radius: 6px;
+    justify-content: end;
+}
+
+.banner-content button {
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+

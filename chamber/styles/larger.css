@@ -142,4 +142,9 @@
   		display: block;
   	}
 
+	/* Banner */
+	.banner-content {
+		width: 700px;
+	}
+
   }

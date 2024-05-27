@@ -11,7 +11,6 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             displayResult(data)
-            console.log(data)
         } else {
             throw Error(await response.text());
         }
@@ -26,7 +25,7 @@ const mapWeatherObject = (apiResponse) => {
             date: formatDate(item.dt_txt),
             sys: item.sys.pod,
             temp: {
-                temp: item.main.temp,
+                temp: Math.round(item.main.temp),
                 temp_min: item.main.temp_min,
                 temp_max: item.main.temp_max
             },
@@ -65,7 +64,6 @@ const displayResult = (data) => {
     const dataMappedSixDate = removeDuplicates(dataMapped)
     const elAnothers = document.querySelector('.anothers-days')
     const weekday = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-    console.log(dataMappedSixDate)
     dataMappedSixDate.map(function(item, index) {
 
         // Current day

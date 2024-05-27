@@ -19,7 +19,12 @@ async function getFetch() {
 
 const HandleData = (data) => {
     const memberEl = document.querySelector('.spotlights')
-    const filterData = data.members.slice(0, 4)
+    const onlyPremium = data.members.filter(function(item){
+        return item.membership_level == "Silver" || item.membership_level == "Gold"
+    }).sort(() => {
+        return 0.5 - Math.random()
+    })
+    const filterData = onlyPremium.slice(0, 3)
 
     filterData.forEach(element => {
         const html = 
