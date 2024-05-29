@@ -249,9 +249,10 @@ main #actions .actions button:hover{
 .weather .anothers-days {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    justify-content: center;
+    justify-content: space-around;
 }
 .weather .anothers-days div {
+    display: grid;
     text-align: center;
 }
 .weather .anothers-days h3, span {
@@ -485,7 +486,7 @@ main#discover .right-side img, main#discover .left-side picture img {
     width: 100%;
     font-size: 1.1rem;
     background-color: var(--primary);
-    color: #000;
+    color: #fff;
     border-radius: 6px;
 }
 .form input[type="submit"]:hover{
@@ -500,6 +501,10 @@ main#discover .right-side img, main#discover .left-side picture img {
     width: 200px;
     height: 200px;
     background-size: contain;
+}
+
+#join .card .content li {
+    margin-bottom: 4px;
 }
 
 /* THANK YOU PAGE */

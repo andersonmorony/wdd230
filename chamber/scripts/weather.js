@@ -26,8 +26,8 @@ const mapWeatherObject = (apiResponse) => {
             sys: item.sys.pod,
             temp: {
                 temp: Math.round(item.main.temp),
-                temp_min: item.main.temp_min,
-                temp_max: item.main.temp_max
+                temp_min: Math.round(item.main.temp_min),
+                temp_max: Math.round(item.main.temp_max)
             },
             weather: item.weather[0]
         }
@@ -105,15 +105,6 @@ const displayResult = (data) => {
         `
         elAnothers.innerHTML += HTML
     })
-
-
-    // const element = document.querySelector(".weather");
-    // const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    // const img = document.createElement("img");
-    // img.setAttribute("src", iconsrc);
-
-    // element.appendChild(img)
-    // element.append(`${data.main.temp.toString().substring(0, 2)}º - ${data.weather[0].description}`);
 }
 
 function formatDate(date) {
