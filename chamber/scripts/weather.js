@@ -70,26 +70,38 @@ const displayResult = (data) => {
         if(index < 1)
         {
             // Image
-            const elImage = document.querySelector('.current-day .left img');
+            const left = document.querySelector('.current-day .left');
+            const elImage = document.createElement('img');
             const iconsrc = `https://openweathermap.org/img/wn/${item.weather.icon}.png`;
             elImage.setAttribute('src', iconsrc)
             elImage.setAttribute('alt', item.weather.description)
+            left.appendChild(elImage)
+
+            // Div
+            const div = document.createElement('div')
 
             // Title
-            const elH2 = document.querySelector('.current-day .left h2');
+            const elH2 = document.createElement('h2');
             elH2.innerHTML = item.weather.main
+            div.appendChild(elH2)
 
             // SubTitle 
-            const elSpan = document.querySelector('.current-day .left span')
+            const elSpan = document.createElement('span')
             elSpan.textContent = item.weather.description
+            div.appendChild(elSpan)
+
+            left.appendChild(div)
 
             // Right side title
-            const elRightH2 = document.querySelector('.current-day .right h2');
+            const right = document.querySelector('.current-day .right');
+            const elRightH2 = document.createElement('h2');
             elRightH2.innerHTML = item.temp.temp + " ºC"
+            right.appendChild(elRightH2)
             
             // Right side title
-            const elRightSpan = document.querySelector('.current-day .right span');
+            const elRightSpan = document.createElement('span');
             elRightSpan.innerHTML = `${item.temp.temp_min} ºC / ${item.temp.temp_max} ºC`
+            right.appendChild(elRightSpan)
 
             return
         }
