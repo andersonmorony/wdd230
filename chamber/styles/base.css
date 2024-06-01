@@ -290,7 +290,7 @@ main #events .events-content {
     grid-column: 1/4;
     margin-bottom: 10px;
 }
-main #events .events-content h1 {
+main #events .events-content h4 {
     margin-top: 0;
 }
 main #events .events-content .date {
@@ -312,7 +312,7 @@ main #events .card {
 main #events .card img {
     width: 70px;
 }
-main #events .card h1 {
+main #events .card h4 {
     margin: 0;
     font-size: 1.2rem;
 }

@@ -15,7 +15,6 @@ switch (today) {
         OpenModal()
         break
     default:
-        console.log('out of weekday')
         break;
 }
 
