@@ -184,8 +184,12 @@ main #actions .actions {
     justify-content: space-around;
     /* gap: 20px; */
 }
-main #actions .actions button{
-    padding: 20px;
+main #actions .actions .btn-action{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+
     min-height: 100px;
     max-width: 200px;
     max-height: 200px;
@@ -197,7 +201,7 @@ main #actions .actions button{
     width: 100px;
     cursor: pointer;
 }
-main #actions .actions button:hover{
+main #actions .actions .btn-action:hover{
     background-color: var(--primary);
     color: var(--white);
 }
@@ -341,7 +345,7 @@ main #ads .spotlights .card {
     border: solid #eee 1px;
     padding: 1rem;
     height: auto;
-    grid-row: 1fr;
+    
     grid-template-rows: 230px 40px 30px;
     justify-items: center;
     align-items: center;

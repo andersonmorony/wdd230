@@ -20,19 +20,12 @@
 	  main #actions .actions{
 		gap: 20px;
 	  }
-	main #actions .actions button{
-		padding: 20px;
+	main #actions .actions .btn-action{
 		min-width: 150px;
 		min-height: 120px;
 		max-width: 200px;
 		max-height: 200px;
-		background-color: var(--thrid);
-		color: var(--black);
-		border: none;
-		box-shadow: 41px 32px 26px -13px rgba(0, 0, 0, 0.1);
-		border-radius: 16px;
 		font-size: 1.4em;
-		cursor: pointer;
 	}
 
   	main #ads .spotlights {
