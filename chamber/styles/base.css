@@ -32,19 +32,20 @@ a {
 .btn-primary:hover {
     background-color: var(--thrid);
     font-weight: 600;
-    transition: .4s;
+    transition: .2s;
 }
 .btn-secondary {
     min-width: 80px;
-    height: 38px;
-    background-color: var(--white);
+    min-height: 44px;
+    background-color: var(--thrid);
     color: var(--black);
     border: none;
+    cursor: pointer;
 }
 .btn-secondary:hover {
-    background-color: var(--thrid);
+    background-color: var(--light-gren);
     font-weight: 600;
-    transition: .4s;
+    transition: .2s;
 }
 
 
@@ -123,6 +124,7 @@ header #menu nav ul{
     width: 100%;
     justify-content: right;
     grid-row: 2;
+    min-height: 44px;
 }
 #btn-menu::before {
 	content: "☰";
@@ -346,7 +348,7 @@ main #ads .spotlights .card {
     padding: 1rem;
     height: auto;
     
-    grid-template-rows: 230px 40px 30px;
+    grid-template-rows: 230px 40px auto;
     justify-items: center;
     align-items: center;
 
@@ -354,6 +356,9 @@ main #ads .spotlights .card {
 main #ads .spotlights .card img {
     width: 100%;
     max-width: 230px;
+}
+main #ads .spotlights .card a {
+    padding: 30px 0;
 }
 main #ads .actions {
     display: grid;
@@ -363,6 +368,7 @@ main #ads .actions {
 main #ads .actions a {
     margin-top: 1rem;
     font-size: 1.2rem;
+    padding: 12px;
 }
 
 .center{
@@ -381,7 +387,7 @@ footer {
 /* Discover */
 
 main#discover{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     padding: 10px;
 }
@@ -399,6 +405,7 @@ main#discover .title p {
 main#discover .left-side {
     display: grid;
     row-gap: 10px;
+    grid-column: 1 / 3;
 }
 main#discover .left-side .card {
     padding: 8px;
@@ -566,7 +573,7 @@ main#directory p {
     align-items: center;
     justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 230px 40px 40px 40px 20px;
+    grid-template-rows: 230px 40px 40px 40px auto;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 .grid .card picture img {
@@ -586,7 +593,9 @@ main#directory p {
     color: #666;
     font-size: .9rem;
 }
-
+.grid .card a {
+    padding: 20px;
+}
 /*  LIST */
 
 .list {
@@ -639,6 +648,7 @@ section.btn-group button{
     cursor: pointer;
     border-radius: 2px;
     font-weight: 500;
+    min-height: 44px;
 }
 section.btn-group button.actived {
     background-color: var(--thrid);

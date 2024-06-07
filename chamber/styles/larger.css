@@ -98,6 +98,9 @@
   	.card.visitor {
   		max-height: 120px;
   	}
+	main#discover .left-side {
+		grid-column: 1/1;
+	}
 
   	main#discover .right-side img {
   		min-height: 120px;
